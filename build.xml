@@ -1,0 +1,21 @@
+<project name="testing" basedir="." default="zip_creation">
+	<property file="deploy_property" />
+        
+	<path id="jsch.path">
+	            <pathelement location="${ANT_HOME}/lib/ant-jsch.jar" />
+	            <pathelement location="${ANT_HOME}/lib/jsch-0.1.54.jar" />
+	        </path>
+
+	        <taskdef name="scp" classname="org.apache.tools.ant.taskdefs.optional.ssh.Scp" classpathref="jsch.path" />
+	        <taskdef name="sshexec" classname="org.apache.tools.ant.taskdefs.optional.ssh.SSHExec" classpathref="jsch.path" />
+	
+	<target name="zip_creation">
+		<delete dir="Hello_Osb_${file_name}/Hello_${file_name}/" />
+		<copy file="release-info.txt" todir="Hello_Osb_${file_name}" />
+		<zip destfile="Hello_Osb_release_${zip_name}.zip" basedir="Hello_Osb_${file_name}"/>
+	</target>
+
+	
+
+</project>
+

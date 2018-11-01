@@ -1,0 +1,58 @@
+------------------------------------------------------------------------------
+Auto-generated Service Manifest Information -- By SOA OSB Jenkins Deployment
+------------------------------------------------------------------------------
+
+Service Name:        Hello_1_0
+Version:             1.0.44
+Release:             Hello_Osb_release_1_0_44.zip
+Build Date:          Wed Oct 31 16:18:56 IST 2018
+Built on:            http://192.168.2.178:8080
+Built by:            Jenkins
+Release location:    https://github.com/pkamagouda/Test_O2/tree/Hello_Code/Hello_Osb_release_1_0_44.zip
+Release Note:        https://github.com/pkamagouda/Test_O2/tree/Hello_Code/Hello_Osb_release_1_0_44.zip
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+Release Deployment Steps:
+------------------------------------------------------------------------------
+
+As wlapp user:
+
+/opt/pftools/bin/spadmin deploy alsbservice location=http://cursa.dev.o2.co.uk/release_candidates/soa-factory/esb/Hello_Osb_release_1_0_44.zip env=[env key]
+
+[env key] = local | dev | int | ref | live
+
+
+Once deployed, this release-info.txt file will be stored in the following location:
+
+	https://github.com/pkamagouda/Test_O2/blob/master/Hello/release-info.txt
+
+This can be used to identify the deployed version of Hello_1_0 service in the
+respective environment.
+
+------------------------------------------------------------------------------
+Release Contents and its MD5 Checksum at the time of deployment (md5sum command)
+------------------------------------------------------------------------------
+
+-- Release package contents --
+
+6d8fbeceffeef3df840ef6ed68779ed5 *config/dev/backend-env-config.xml
+7816f54a1d687b18f3463a1a825ebd1a *config/dev/service-config.xml
+ff7b28aaf0ef549b6466fdef4ec4be95 *config/perf/service-config.xml
+976c4f591fed6c77bb5ad6253643b4b4 *config/perf/backend-env-config.xml
+69ad2e3935b237c5647b416046fc7f1e *config/ref/service-config.xml
+7e920e65405aea40801d9a64c0536dd1 *config/ref/backend-env-config.xml
+9e3a4e0cde96f9d5fdbc8b337c922c8c *config/live/backend-env-config.xml
+ff7b28aaf0ef549b6466fdef4ec4be95 *config/live/service-config.xml
+d1339e1414cca3ea0b904fb68b85ad9d *config/log-config.xml
+7a4e9f7bd4bc02d51c6dbb73403eb0c5 *config/errormap-config.xml
+adbc2c25889a060b4590f11697251191 *testing/ref-int/36600  SOAPUI Request Response Document for  Hello_1_0(Archive order ).doc
+c11494f83572a7ae2f3511798c81136a *testing/ref-int/36600_SOAPUI_Request Response of Hello_1_0.doc
+c37753652e32e98ea1ebaf1f4e4cce3b *testing/ref-int/Hello_1_0_44test.xml
+022c8fbc80c3782e57429216f823e524 *testing/dev/Hello_1_0_44UnitTest.xml
+48249473968672629f42a879ac7a5edf *testing/Hello_1_0_44TestDataRequirement.xls
+fc91dd430e0d6b598a40835586d44711 *output/Hello_1_0.jar
+
+------------------------------------------------------------------------------
